@@ -24,7 +24,7 @@ def google_search(query):
     for page in range(1, 4):  # First 3 pages
         url = f"https://www.google.com/search?q={query}&start={(page-1)*10}"
         driver.get(url)
-        time.sleep(25)  # Wait for page to load
+        time.sleep(15)  # Wait for page to load
         driver.refresh()
         driver.maximize_window()
 
