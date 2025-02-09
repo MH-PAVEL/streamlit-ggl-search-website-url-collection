@@ -59,7 +59,7 @@ if st.button("Submit"):
             st.warning("No results found.")
 
         # Clear input field
-        st.experimental_rerun()
+        st.session_state.query = ""
     else:
         st.error("Please enter a search query.")
 
